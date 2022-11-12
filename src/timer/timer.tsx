@@ -80,7 +80,6 @@ const Timer = ({countdown} : {countdown: number }) => {
 
     return (
         <div className={`container ${darkMode ? 'black' : 'white'}`} onClick={setProcess} onDoubleClick={kill}>
-            {/*<input id={"mode"} type={"checkbox"} onChange={(e) => setDarkMode(e.target.value)}></input>*/}
             <div>{`${
                 Number(currentTime) / 60 < 10 ? 0 : ''}${Number(Number(currentTime) / 60).toFixed(0)
             }:${
