@@ -25,7 +25,6 @@ const useLocalStorage = (key: string, initialValue: any, {serialize = JSON.strin
 
     return [value, setValue]
 }
-
 const Timer = ({countdown} : {countdown: number }) => {
     const [timer, saveTimer] = useLocalStorage('react:timer:timer', countdown);
     console.log("timer", timer)
