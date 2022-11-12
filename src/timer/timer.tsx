@@ -39,7 +39,7 @@ const Timer = ({countdown} : {countdown: number }) => {
         return () => {
             clearInterval(interval)
             console.log("saving", currentTime)
-            saveTimer(10)
+            saveTimer(20)
         }
     }, [])
 
